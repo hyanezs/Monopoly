@@ -96,7 +96,7 @@ public class GUITradeDialog extends JDialog implements TradeDialog {
             Player player = (Player) iter.next();
             cboSellers.addItem(player);
         }
-        if(sellers.size() > 0) {
+        if(sellers.isEmpty()) {
             updatePropertiesCombo((Player)sellers.get(0));
         }
     }
